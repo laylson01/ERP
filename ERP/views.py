@@ -1,5 +1,4 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
-
-def index(request):
-    return HttpResponse("Hello, world. You're at the ERP index.")
+def home(request):
+    return render(request, 'ERP/home.html')  # Caminho relativo ao diretório templates
